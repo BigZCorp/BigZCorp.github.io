@@ -1,0 +1,28 @@
+---
+layout: main
+title: Big Z Corp Menu
+---
+<div class="card">
+  <div class="card-body">
+    <h1 class="card-title">Menu</h1>
+    <div class="card-text">
+    {% for menuItem in site.data.menu %}
+      <h2>{{ menuItem.name }} <small class="text-muted">${{ menuItem.price }}</small></h2>
+      <p>{{ menuItem.description }}</p>
+      <details>
+        <summary>Options</summary>
+        {% for choice in menuItem.choices %}
+        <p>{{ choice.name }}</p>
+        {% for option in choice.options %}
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="{{ choice.name }}" id="{{ choice.name }}" value="{{ option.name }}">
+          <label class="form-check-label" for="flexRadioDefault1">
+            {{ option.name }} <small class="text-muted">+${{ option.priceChange }}</small>
+          </label>
+        </div>
+        {% endfor %}
+      </details>
+    {% endfor %}
+    </div>
+  </div>
+</div>
