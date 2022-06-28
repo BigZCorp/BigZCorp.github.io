@@ -1,0 +1,12 @@
+- name: Wide Noodles
+  description: "Yummy noodles which are wide. They come with soy sauce and meat sauce."
+  price: 4.99
+  choices:
+  - name: Sauce
+    options:
+    - name: Soy Sauce
+      priceChange: 0.00
+    - name: Meat Sauce
+      priceChange: 5.00
+    - name: Meat Sauce with Meat
+      priceChange: 10.00
