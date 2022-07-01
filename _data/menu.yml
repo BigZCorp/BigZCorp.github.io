@@ -4,9 +4,43 @@
   choices:
   - name: Sauce
     options:
+    - name: "No Sauce"
+      priceChange: 0.00
     - name: Soy Sauce
       priceChange: 0.00
     - name: Meat Sauce
       priceChange: 5.00
     - name: Meat Sauce with Meat
       priceChange: 10.00
+  - name: Meat
+    options:
+    - name: "No Meat"
+      priceChange: 0.00
+    - name: Chinese Ham
+      priceChange: 5.00
+    - name: Pork
+      priceChange: 5.00
+- name: Tomatoes and Scrambled Eggs
+  description: "Scrambled eggs mixed with sliced tomatoes."
+  price: 4.99
+  choices:
+  - name: Add Rice
+    options:
+    - name: "Yes"
+      priceChange: 5.00
+    - name: "No"
+      priceChange: 0.00
+- name: Water
+  description: "Some thirst-quenching water."
+  price: 0.49
+  choices:
+  - name: Water Type
+    options:
+    - name: "Iced Water"
+      priceChange: 0.50
+    - name: "Cold Water"
+      priceChange: 0.00
+    - name: "Warm Water"
+      priceChange: 0.50
+    - name: "Hot Water"
+      priceChange: 0.50
