@@ -7,7 +7,7 @@ title: Big Z Corp Menu
     <h1 class="card-title">Menu</h1>
     <div class="card-text">
     {% for menuItem in site.data.menu %}
-      <h2>{{ menuItem.name }} <small class="text-muted">${{ menuItem.price }}</small></h2>
+      <h2 id="{{ menuItem.name | slugify }}" name="{{ menuItem.name | slugify }}">{{ menuItem.name }} <small class="text-muted">${{ menuItem.price }}</small></h2>
       <p>{{ menuItem.description }}</p>
       <details>
         <summary>Options</summary>
